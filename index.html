@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>kalylator</title>
 </head>
-<body>
-    
+<body> 
+    <!-- tilte-->
+    <h1>Kalylator</h1>
+
+    <!-- form to layot -->
+
+    <form id="claculatorForm">
+        <div>
+            <label for="number1">Numer1</label>
+            <input type="number" id="number1" name="number1" required>
+        </div>
+        <div>
+            <!-- label for operator -->
+            <label for="number2">Numer2</label>
+            <input type="number" id="number2" name="number2" required>
+        </div>
+        <div>
+            <!--option for operator -->
+            <label for="">Operator</label>
+            <select id="operator" name="operator" required>
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+        </div>
+        <button type="button" onclick="calculate()">Beräkna</button>
+
+        <!-- result -->
+
+        <h2>Resultat</h2>
+        <p id="result"></p>
+    </form>
+
+    <script src="script.js"></script>
 </body>
 </html>
